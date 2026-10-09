@@ -1,0 +1,4 @@
+Pink and green background color -   
+bg-gradient-to-br from-orange-50 via-yellow-50 to-green-50
+
+bg-gradient-to-r from-green-200 via-yellow-50 to-green-200
