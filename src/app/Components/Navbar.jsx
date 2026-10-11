@@ -93,7 +93,7 @@ const Navbar = () => {
             </button>
 
             {/* Navigation Links */}
-            <div className="hidden md:flex items-center space-x-[17px] md:ml-12 ">
+            <div className="hidden md:flex items-center space-x-[16px]">
               <div className="relative group">
                 <Link href="/" className="font-sans text-green-700 text-[16px] hover:text-green-400 transition-colors font-bold">
                   Home
@@ -171,14 +171,25 @@ const Navbar = () => {
               </div>
 
               <div className="relative group">
-                <Link href="/project" className="font-sans text-green-700 text-[16px] font-bold hover:text-green-400 transition-colors">
-                  Projects
+                <Link
+                  href="/project"
+                  className="font-sans inline-flex items-center gap-1 text-green-700 text-[16px] font-bold hover:text-green-400 transition-colors"
+                >
+                  <span>Projects</span>
+                  <svg
+                    className="w-4 h-4 shrink-0 transition-transform duration-200 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </Link>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-3/4"></span>
                 <div className="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
-                  <div className="bg-white rounded-lg shadow-lg py-2 min-w-[210px]">
-                    <Link href="/project" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Our Projects</Link>
-                    <Link href="/projectmanagement" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Project Management</Link>
+                  <div className="bg-white rounded-lg shadow-lg py-2">
+                    <Link href="/project" className="font-sans block px-3 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Our Projects</Link>
+                    <Link href="/projectmanagement" className="font-sans block px-3 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Project&nbsp;Management</Link>
                   </div>
                 </div>
               </div>
@@ -210,6 +221,13 @@ const Navbar = () => {
               <div className="relative group">
                 <Link href="/blog" className="font-sans text-green-700 text-[16px] font-bold hover:text-green-400 transition-colors">
                   Blog
+                </Link>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-3/4"></span>
+              </div>
+
+              <div className="relative group">
+                <Link href="/webinars" className="font-sans text-green-700 text-[16px] font-bold hover:text-green-400 transition-colors">
+                  Webinars
                 </Link>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-3/4"></span>
               </div>

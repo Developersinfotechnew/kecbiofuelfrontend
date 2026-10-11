@@ -185,7 +185,7 @@ const Footer = () => {
                         <div className="flex items-center space-x-3">
                             <Leaf className="w-5 h-5 text-green-600" />
                             <span className="text-gray-600 text-sm font-sans">
-                                © 2025 by{" "}
+                                © 2026 by{" "}
                                 <Link href="https://developersinfotech.in" target="_blank" className="text-green-600 hover:underline font-medium">
                                     Developersinfotech.in
                                 </Link>

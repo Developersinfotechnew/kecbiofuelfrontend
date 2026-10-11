@@ -26,6 +26,7 @@ const Footer = dynamic(() => import('../app/Components/Footer'), { ssr: false, l
 const BlogSection = dynamic(() => import('../app/Components/BlogSectionhome'), { ssr: false, loading: () => <LazyLoader /> });
 const CbgGlimpse = dynamic(() => import('@/app/Components/CbgGlimpse'), { ssr: false, loading: () => <LazyLoader /> });
 const CtaSection = dynamic(() => import('@/app/Components/CtaSection'), { ssr: false, loading: () => <LazyLoader /> });
+const WebinarsHome = dynamic(() => import('@/app/Components/WebinarsHome'), { ssr: false, loading: () => <LazyLoader /> });
 const YoutubeVideosRow = dynamic(() => import('@/app/Components/YoutubeVideosRow'), { ssr: false, loading: () => <LazyLoader /> });
 
 
@@ -44,6 +45,7 @@ const Home = () => {
       <CbgGlimpse />
       <InstagramSlider />
       <YoutubeVideosRow />
+      <WebinarsHome />
       <BlogSection />
       <CtaSection />
       <Footer />
