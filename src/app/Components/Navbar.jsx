@@ -209,10 +209,9 @@ const Navbar = () => {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-3/4"></span>
                 </button>
                 {isGalleryOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg py-2 min-w-[180px]">
+                  <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg py-2">
                     <Link href="/gallery" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Gallery</Link>
                     <Link href="/videos" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Videos</Link>
-                    <Link href="/webinars" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Webinars</Link>
                     <Link href="/cbgdownload" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Download</Link>
                   </div>
                 )}
