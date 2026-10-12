@@ -195,26 +195,29 @@ const Navbar = () => {
               </div>
 
               {/* Library Dropdown */}
-              <div className="relative">
+              <div className="relative group">
                 <button
-                  className="font-sans relative inline-flex items-center text-green-700 text-[16px] font-bold hover:text-green-400 transition-colors group"
-                  onClick={() => setIsGalleryOpen(!isGalleryOpen)}
+                  type="button"
+                  className="font-sans inline-flex items-center gap-1 text-green-700 text-[16px] font-bold hover:text-green-400 transition-colors cursor-pointer"
                 >
-                  <span className="flex items-center gap-1">
-                    <span>Library</span>
-                    <svg className={`w-4 h-4 shrink-0 transition-transform duration-200 ${isGalleryOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </span>
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-3/4"></span>
+                  <span>Library</span>
+                  <svg
+                    className="w-4 h-4 shrink-0 transition-transform duration-200 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </button>
-                {isGalleryOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg py-2">
-                    <Link href="/gallery" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Gallery</Link>
-                    <Link href="/videos" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Videos</Link>
-                    <Link href="/cbgdownload" className="font-sans block px-4 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Download</Link>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-3/4"></span>
+                <div className="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                  <div className="bg-white rounded-lg shadow-lg py-2">
+                    <Link href="/gallery" className="font-sans block px-3 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Gallery</Link>
+                    <Link href="/videos" className="font-sans block px-3 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Videos</Link>
+                    <Link href="/cbgdownload" className="font-sans block px-3 py-2 text-[16px] font-bold text-green-700 hover:text-green-400 transition-colors hover:bg-gray-50">Download</Link>
                   </div>
-                )}
+                </div>
               </div>
 
               <div className="relative group">
